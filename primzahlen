@@ -1,0 +1,16 @@
+#include <stdio.h>
+int main(){
+        int i; 
+        int divisor;
+        char prim;
+
+        for(i = 1; i <= 1000000000; i++) {
+                prim = 1;
+                for(divisor = 2; divisor < i; divisor++) {
+                        if(i % divisor == 0) prim = 0;
+                }
+         if(prim) {
+                        //printf("%8d\n", i);
+                }
+        }
+}
